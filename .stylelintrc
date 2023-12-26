@@ -1,17 +1,3 @@
 {
-  "extends": "stylelint-config-htmlacademy",
-  "rules": {
-    "property-no-unknown": [
-      true,
-      {
-        "ignoreProperties": [
-          "composes"
-        ]
-      }
-    ],
-    "unit-whitelist": ["em", "rem", "s", "px"],
-
-    "codeguide/indentation": "tab",
-    "codeguide/number-leading-zero": null
-  }
+  "extends": "stylelint-config-htmlacademy"
 }
