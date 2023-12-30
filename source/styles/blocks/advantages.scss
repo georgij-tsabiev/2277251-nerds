@@ -1,1 +1,42 @@
-/* Стили будут тут */
+.advantages {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.advantages__definition {
+  position: relative;
+  margin: 0;
+  color: $secondary-color;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+
+  &::after {
+    content: "%";
+    position: absolute;
+    top: -7px;
+    color: $secondary-color;
+    font-family: "Roboto", "Tahoma", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 64px;
+  }
+}
+
+.advantages__term {
+  color: $main-color;
+  text-align: center;
+  grid-row: 2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}

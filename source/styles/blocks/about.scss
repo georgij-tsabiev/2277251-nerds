@@ -1,1 +1,44 @@
-/* Стили будут тут */
+.about {
+  padding: 0 37px;
+}
+
+.about__title {
+  margin: 0 0 15px 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.about__descr {
+  margin: 0 0 15px 0;
+  color: $main-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+  }
+}
+
+.about__accuracy {
+  display: block;
+  margin: 0 0 15px 0;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+  }
+}
