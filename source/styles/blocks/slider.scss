@@ -1,1 +1,49 @@
-/* Стили будут тут */
+.slider {
+  padding: 0 37px;
+  position: relative;
+}
+
+.slider__title {
+  margin: 0 0 15px 0;
+  color: $secondary-color;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px 0;
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+.slider__descr {
+  margin: 0 0 15px 0;
+  color: $main-color;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 38px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.slider__link {
+  margin: 0 0 15px 0;
+  padding: 16px 54px;
+}
+
+.slider__pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__img {
+  display: block;
+  margin: 0 auto;
+}

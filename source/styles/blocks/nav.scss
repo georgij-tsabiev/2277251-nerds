@@ -1,1 +1,7 @@
-/* Стили будут тут */
+.nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

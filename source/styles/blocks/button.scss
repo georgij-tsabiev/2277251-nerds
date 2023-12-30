@@ -2,4 +2,23 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  color: #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--main {
+    background-color: #fb565a;
+  }
+
+  &--secondary {
+    background-color: #00ca74;
+  }
+
+  &--additional {
+    background-color: #efc849;
+  }
 }
