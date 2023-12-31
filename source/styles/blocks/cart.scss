@@ -1,1 +1,30 @@
-/* Стили будут тут */
+.cart {
+  padding: 0 0 0 40px;
+  position: relative;
+  color: $secondary-color;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url("../../images/icons/stack.svg#icon-cart");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+  }
+}
