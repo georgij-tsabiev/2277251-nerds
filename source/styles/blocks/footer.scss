@@ -1,1 +1,20 @@
-/* Стили будут тут */
+.footer {
+  padding: 35px 37px 35px 37px;
+}
+
+.footer__title {
+  margin: 0 0 10px 0;
+  color: $secondary-color;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.footer__descr {
+  display: block;
+  color: #444444;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
