@@ -12,8 +12,8 @@
 
 .nav__toggle {
   @include flex(row, normal, center);
-  width: 20px;
-  height: 14px;
+  width: 25px;
+  height: 17px;
   z-index: 1;
   position: relative;
   padding: 0;
@@ -25,7 +25,7 @@
   &::after {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 25px;
     height: 2px;
     background-color: $main-color;
     transition: all 0.3s ease 0s;
@@ -57,7 +57,7 @@
 }
 
 .nav__toggle-line {
-  width: 20px;
+  width: 25px;
   height: 2px;
   background-color: $main-color;
   transform: scale(1);
