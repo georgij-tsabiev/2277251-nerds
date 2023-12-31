@@ -1,4 +1,6 @@
 .header {
-  padding: 10px 15px 35px 15px;
+  @include flex(row, normal, center);
+  flex-wrap: wrap;
+  padding: 10px 37px 35px 37px;
   background-color: #eeeeee;
 }

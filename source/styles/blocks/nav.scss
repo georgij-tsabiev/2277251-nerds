@@ -1,7 +1,64 @@
 .nav {
+  margin-left: auto;
+}
+
+.nav__wrapper {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+.nav__toggle {
+  @include flex(row, normal, center);
+  width: 20px;
+  height: 14px;
+  z-index: 1;
+  position: relative;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $main-color;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav__toggle-line {
+  width: 20px;
+  height: 2px;
+  background-color: $main-color;
+  transform: scale(1);
 }
