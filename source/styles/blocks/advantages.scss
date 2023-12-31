@@ -36,7 +36,11 @@
   color: $main-color;
   text-align: center;
   grid-row: 2;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
