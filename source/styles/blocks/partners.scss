@@ -1,1 +1,14 @@
-/* Стили будут тут */
+.partners {
+  padding: 0 37px;
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding: 15px 0;
+}
