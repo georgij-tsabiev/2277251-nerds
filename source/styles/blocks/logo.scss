@@ -1,1 +1,7 @@
-/* Стили будут тут */
+.logo {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 202px;
+  }
+}

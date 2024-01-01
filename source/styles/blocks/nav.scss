@@ -1,5 +1,9 @@
 .nav {
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: initial;
+  }
 }
 
 .nav__wrapper {
@@ -9,6 +13,12 @@
     @include flex();
     flex-wrap: wrap;
     gap: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 245px;
   }
 }
 

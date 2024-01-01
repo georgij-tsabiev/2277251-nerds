@@ -1,6 +1,17 @@
 .header {
-  @include flex(row, normal, center);
-  flex-wrap: wrap;
   padding: 10px 37px 35px 37px;
   background-color: #eeeeee;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 35px 37px;
+  }
+}
+
+.header__wrapper {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+}
+
+.header__button {
+  margin-left: auto;
 }
