@@ -1,5 +1,7 @@
 .services {
-  padding: 0 37px;
+  @media (max-width: 1440px) {
+    padding: 0 37px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 20px 80px 20px;

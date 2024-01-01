@@ -1,5 +1,7 @@
 .about {
-  padding: 0 37px;
+  @media (max-width: 1440px) {
+    padding: 0 37px;
+  }
 }
 
 .about__title {
