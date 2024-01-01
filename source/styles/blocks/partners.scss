@@ -1,5 +1,7 @@
 .partners {
-  padding: 0 37px;
+  @media (max-width: 1440px) {
+    padding: 0 37px;
+  }
 }
 
 .partners__list {
@@ -11,4 +13,8 @@
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   padding: 15px 0;
+
+  @media (min-width: $desktop-width) {
+    @include flex(row, space-around, center);
+  }
 }
