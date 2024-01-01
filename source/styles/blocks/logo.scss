@@ -4,4 +4,12 @@
   @media (min-width: $desktop-width) {
     margin-right: 202px;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

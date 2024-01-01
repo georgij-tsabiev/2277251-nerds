@@ -94,4 +94,13 @@
 
 .nav__link {
   color: $secondary-color;
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:active {
+    color: $secondary-color;
+    opacity: 0.3;
+  }
 }

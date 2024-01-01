@@ -27,4 +27,13 @@
     background-repeat: no-repeat;
     background-size: 15px 15px;
   }
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:active {
+    color: $secondary-color;
+    opacity: 0.3;
+  }
 }
