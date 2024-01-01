@@ -28,6 +28,9 @@
 }
 
 .page__map {
-  margin: 0 0 34px 0;
-  padding: 0 37px;
+  margin: 0 auto 34px auto;
+
+  @media (max-width: 1440px) {
+    padding: 0 37px;
+  }
 }

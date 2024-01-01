@@ -1,5 +1,11 @@
 .footer {
   padding: 35px 37px 35px 37px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 0 140px;
+  }
 }
 
 .footer__title {
@@ -17,4 +23,9 @@
   font-size: 14px;
   line-height: 22px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    text-align: start;
+  }
 }

@@ -1,6 +1,10 @@
 .contacts {
   text-align: center;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    max-width: 320px;
+  }
 }
 
 .contacts__title {
