@@ -1,3 +1,14 @@
 .hero {
   background-color: #eeeeee;
+
+  &--secondary {
+    @media (min-width: $desktop-width) {
+      padding: 72px 140px 108px 140px;
+    }
+
+    .hero__title {
+      margin: 0;
+      text-align: center;
+    }
+  }
 }
