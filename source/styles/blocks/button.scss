@@ -12,13 +12,43 @@
 
   &--main {
     background-color: #fb565a;
+
+    &:hover {
+      background-color: #e74246;
+    }
+
+    &:active {
+      color: #e37375;
+      background-color: #d7373b;
+      box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
+    }
   }
 
   &--secondary {
     background-color: #00ca74;
+
+    &:hover {
+      background-color: #00bc6c;
+    }
+
+    &:active {
+      color: #4dc391;
+      background-color: #00aa62;
+      box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
+    }
   }
 
   &--additional {
     background-color: #efc849;
+
+    &:hover {
+      background-color: #eab534;
+    }
+
+    &:active {
+      color: #eec164;
+      background-color: #e5a722;
+      box-shadow: 0 3px 0 0 rgba(0, 1, 1, 0.1) inset;
+    }
   }
 }
