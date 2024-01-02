@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   padding: 20px;
   background-color: #edf0f5;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/line-desktop.svg");
+  }
 }
 
 .error__title {
