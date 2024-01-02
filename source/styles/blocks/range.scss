@@ -56,6 +56,14 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
   }
+
+  &:hover {
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.1));
+
+    &::before {
+      background-color: #e74246;
+    }
+  }
 }
 
 .range__list {
