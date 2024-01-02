@@ -47,17 +47,19 @@
           <form class="templates__form" action="https://echo.htmlacademy.ru/">
             <fieldset class="templates__group">
               <legend class="templates__title">Стоимость:</legend>
-              <div class="templates__range range">
-                <button class="range__toggle range__toggle--min" type="button" aria-label="Изменить минимальную цену."></button>
-                <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
+              <div class="range">
+                <div class="templates__range range__wrapper">
+                  <button class="range__toggle range__toggle--min" type="button" aria-label="Изменить минимальную цену."></button>
+                  <button class="range__toggle range__toggle--max" type="button" aria-label="Изменить максимальную цену."></button>
+                </div>
                 <ul class="range__list reset-list">
                   <li class="range__item">
                     <label class="range__label" for="min-price">от</label>
-                    <input class="range__toggle-descr" type="text" name="min-price" id="min-price">
+                    <input class="range__toggle-descr" type="text" name="min-price" id="min-price" value="0">
                   </li>
                   <li class="range__item">
                     <label class="range__label" for="max-price">до</label>
-                    <input class="range__toggle-descr" type="text" name="max-price" id="max-price">
+                    <input class="range__toggle-descr" type="text" name="max-price" id="max-price" value="15 000">
                   </li>
                 </ul>
               </div>

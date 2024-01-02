@@ -1,1 +1,83 @@
-/* Стили будут тут */
+.range {
+  @include flex(column);
+  gap: 14px;
+  max-width: 260px;
+}
+
+.range__wrapper {
+  padding: 30px 20px;
+  position: relative;
+  background-color: #eeeeee;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 2px;
+    background-color: #d7dcdf;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 138px;
+    height: 2px;
+    background-color: #00ca74;
+    top: 50%;
+    left: 33px;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+.range__toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.1));
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.range__list {
+  @include flex(row, space-between);
+}
+
+.range__label {
+  margin-right: 12px;
+  color: $main-color;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.range__toggle-descr {
+  padding: 8px 15px;
+  width: 80px;
+  border: none;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  color: $main-color;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
