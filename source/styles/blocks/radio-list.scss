@@ -1,1 +1,42 @@
-/* Стили будут тут */
+.radio-list {
+  @include flex(column);
+  gap: 15px;
+}
+
+.radio-list__field + .radio-list__outline {
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.radio-list__field:checked + .radio-list__outline {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #4d4d4d;
+  }
+}
+
+.radio-list__text {
+  padding: 3px 36px;
+  display: inline-block;
+  color: $main-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+

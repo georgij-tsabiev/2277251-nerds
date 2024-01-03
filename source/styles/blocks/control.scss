@@ -1,1 +1,16 @@
-/* Стили будут тут */
+.radio-list__control {
+  @include flex();
+  position: relative;
+  max-width: 185px;
+  cursor: pointer;
+}
+
+.control__outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #4d4d4d;
+  opacity: 0.4;
+}
