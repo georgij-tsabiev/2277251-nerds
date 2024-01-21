@@ -45,7 +45,10 @@
               <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
               <p class="slider__descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
               <a class="slider__link button button--main" href="#">Узнать больше</a>
-              <img class="slider__img" src="images/phones-with-lines-mobile@1x.png" width="303" height="189" alt="Изображение телефонов с декоративными символами.">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/phones-with-lines-desktop@1x.png, images/phones-width-lines-desktop@2x.png 2x" width="760" height="431">
+                <img class="slider__img" src="images/phones-with-lines-mobile@1x.png" srcset="images/phones-with-lines-mobile@2x.png" width="303" height="189" alt="Изображение телефонов с декоративными символами.">
+              </picture>
             </li>
             <li class="slider__item"></li>
             <li class="slider__item"></li>
