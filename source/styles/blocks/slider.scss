@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.slider__item {
+  display: grid;
+  grid-template-columns: 390px 760px;
+  gap: 7px;
+}
+
 .slider__title {
   margin: 0 0 15px 0;
   color: $secondary-color;

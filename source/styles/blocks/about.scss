@@ -2,6 +2,12 @@
   @media (max-width: 1440px) {
     padding: 0 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 650px 360px;
+    gap: 150px;
+  }
 }
 
 .about__title {

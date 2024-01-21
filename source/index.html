@@ -42,13 +42,17 @@
         <div class="hero__slider slider container">
           <ul class="slider__list reset-list">
             <li class="slider__item">
-              <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
-              <p class="slider__descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider__link button button--main" href="#">Узнать больше</a>
-              <picture>
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/phones-with-lines-desktop@1x.png, images/phones-width-lines-desktop@2x.png 2x" width="760" height="431">
-                <img class="slider__img" src="images/phones-with-lines-mobile@1x.png" srcset="images/phones-with-lines-mobile@2x.png" width="303" height="189" alt="Изображение телефонов с декоративными символами.">
-              </picture>
+              <div class="slider__content-wrapper">
+                <h2 class="slider__title">Долго, дорого, скрупулезно.</h2>
+                <p class="slider__descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="slider__link button button--main" href="#">Узнать больше</a>
+              </div>
+              <div class="slider__image-wrapper">
+                <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/phones-with-lines-desktop@1x.png, images/phones-width-lines-desktop@2x.png 2x" width="760" height="431">
+                  <img class="slider__img" src="images/phones-with-lines-mobile@1x.png" srcset="images/phones-with-lines-mobile@2x.png" width="303" height="189" alt="Изображение телефонов с декоративными символами.">
+                </picture>
+              </div>
             </li>
             <li class="slider__item"></li>
             <li class="slider__item"></li>
@@ -87,26 +91,30 @@
         </ul>
       </section>
       <section class="page__about about container">
-        <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
-        <p class="about__descr">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <div class="orders">
-          <h3 class="orders__title">Выполняем заказы на разработку:</h3>
-          <ul class="orders__list reset-list">
-            <li class="orders__item">Веб-сайтов любой сложности</li>
-            <li class="orders__item">Мобильных приложений для iOS и Android</li>
-            <li class="orders__item">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+        <div class="about__column-left">
+          <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <p class="about__descr">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <div class="orders">
+            <h3 class="orders__title">Выполняем заказы на разработку:</h3>
+            <ul class="orders__list reset-list">
+              <li class="orders__item">Веб-сайтов любой сложности</li>
+              <li class="orders__item">Мобильных приложений для iOS и Android</li>
+              <li class="orders__item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
         </div>
-        <img class="about__image" src="images/nerds-illustration@1x.png" width="360" height="208" alt="Иллюстрация Нёрдс.">
-        <span class="about__accuracy">с 2004 года Любим точность во всем:</span>
-        <dl class="advantages">
-          <dt class="advantages__term">Уровень самоотдачи</dt>
-          <dd class="advantages__definition">146</dd>
-          <dt class="advantages__term">Соблюдение сроков</dt>
-          <dd class="advantages__definition">100</dd>
-          <dt class="advantages__term">Минимальная предоплата</dt>
-          <dd class="advantages__definition">50</dd>
-        </dl>
+        <div class="about__column-right">
+          <img class="about__image" src="images/nerds-illustration@1x.png" width="360" height="208" alt="Иллюстрация Нёрдс.">
+          <span class="about__accuracy">с 2004 года Любим точность во всем:</span>
+          <dl class="advantages">
+            <dt class="advantages__term">Уровень самоотдачи</dt>
+            <dd class="advantages__definition">146</dd>
+            <dt class="advantages__term">Соблюдение сроков</dt>
+            <dd class="advantages__definition">100</dd>
+            <dt class="advantages__term">Минимальная предоплата</dt>
+            <dd class="advantages__definition">50</dd>
+          </dl>
+        </div>
       </section>
       <section class="page__partners partners container">
         <h2 class="visually-hidden">Наши клиенты</h2>
