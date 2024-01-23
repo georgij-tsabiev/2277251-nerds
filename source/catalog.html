@@ -258,7 +258,7 @@
           <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
           <address class="contacts__address">наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург</address>
           <a class="contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="contacts__button" href="#">Напишите нам</a>
+          <a class="contacts__button button button--main" href="#">Напишите нам</a>
         </div>
         <div class="map__wrapper map__wrapper--no-js" id="map"></div>
         <picture>
@@ -282,5 +282,23 @@
       <h2 class="footer__title">Давайте дружить, это выгодно!</h2>
       <span class="footer__descr">Скидка 10% для друзей из социальных сетей.</span>
     </footer>
+    <div class="modal">
+      <div class="modal__control modal__contact-us">
+        <button class="modal__close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal__title">Напишите нам</h2>
+        <form class="modal__feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal__label" for="user-name">Ваше имя:</label>
+          <input class="modal__field field" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" aria-label="Имя и фамилия." required>
+          <label class="modal__label" for="user-email">Ваш email:</label>
+          <input class="modal__field field" type="email" name="user-email" id="user-email" placeholder="email@example.com" aria-label="Ваш email." required>
+          <textarea class="modal__user-letter" name="user-letter" cols="30" rows="6" placeholder="В свободной форме" required></textarea>
+          <button class="modal__button button button--main" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

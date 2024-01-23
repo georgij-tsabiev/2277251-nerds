@@ -1,0 +1,28 @@
+.modal {
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal__control {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+  cursor: default;
+}
+
+.modal__contact-us {
+  width: 320px;
+  padding: 29px 30px 46px 30px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 960px;
+    padding: 63px 100px 84px 100px;
+  }
+}
