@@ -4,6 +4,11 @@
 
   @media (min-width: $desktop-width) {
     max-width: 320px;
+    position: absolute;
+    top: 54px;
+    left: 140px;
+    z-index: 1;
+    padding: 50px;
   }
 }
 
