@@ -1,1 +1,20 @@
-/* Стили будут тут */
+.checkbox-list {
+  @include flex(column);
+  gap: 17px;
+}
+
+.checkbox-list__control {
+  @include flex();
+  position: relative;
+  max-width: 230px;
+  cursor: pointer;
+}
+
+.checkbox-list__field + .checkbox-list__outline {
+  border: 2px solid #4d4d4d;
+  border-radius: 3px;
+}
+
+.checkbox-list__text {
+  padding: 2px 36px;
+}

@@ -1,3 +1,21 @@
+.templates {
+  @include flex();
+  gap: 140px;
+}
+
+.templates__filter {
+  width: 260px;
+}
+
+.templates__form {
+  width: 260px;
+}
+
+.templates__wrapper {
+  @include flex(column);
+  width: 100%;
+}
+
 .templates__range {
   @include flex();
   max-width: 260px;
@@ -5,12 +23,17 @@
 }
 
 .templates__group {
-  margin: 0;
+  margin: 0 0 43px 0;
   padding: 0;
   border: none;
+
+  &:last-of-type {
+    margin: 0 0 48px 0;
+  }
 }
 
 .templates__title {
+  margin: 0 0 13px 0;
   padding: 0;
   color: $secondary-color;
   font-size: 14px;

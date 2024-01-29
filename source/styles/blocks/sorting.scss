@@ -1,1 +1,28 @@
-/* Стили будут тут */
+.sorting {
+  @include flex(row, normal, center);
+}
+
+.sorting__title {
+  margin-right: 266px;
+}
+
+.sorting__list {
+  @include flex();
+}
+
+.sorting__toggles-list {
+  @include flex(row, space-between);
+  margin-left: auto;
+}
+
+.sorting__toggle-button {
+  width: 11px;
+  height: 10px;
+}
+
+.templates__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 31px 41px;
+  padding: 50px 0 55px 0;
+}
