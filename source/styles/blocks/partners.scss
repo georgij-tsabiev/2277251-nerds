@@ -1,6 +1,12 @@
 .partners {
-  @media (max-width: 1440px) {
-    padding: 0 37px;
+  padding: 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

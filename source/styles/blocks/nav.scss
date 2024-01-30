@@ -12,7 +12,7 @@
   @media (min-width: $tablet-width) {
     @include flex();
     flex-wrap: wrap;
-    gap: 55px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +80,7 @@
     @include flex();
     flex-wrap: wrap;
     gap: 35px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase;

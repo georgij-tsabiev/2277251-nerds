@@ -3,7 +3,11 @@
   background-color: #eeeeee;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 37px 35px 37px;
+    padding: 50px 75px 35px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0 35px 0;
   }
 }
 

@@ -1,9 +1,14 @@
 .about {
-  @media (max-width: 1440px) {
-    padding: 0 37px;
+  padding: 0 37px;
+
+  @media (min-width: $tablet-width) {
+    @include flex();
+    padding: 0 75px;
+    gap: 38px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     display: grid;
     grid-template-columns: 650px 360px;
     gap: 150px;
@@ -18,8 +23,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 32px 0;
-    font-size: 45px;
+    font-size: 37px;
     line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 45px;
   }
 }
 
