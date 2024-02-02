@@ -5,12 +5,14 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 30px auto;
     justify-content: normal;
     display: grid;
     grid-template-columns: max-content 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto 60px auto;
     gap: 140px;
   }
 }
@@ -55,5 +57,27 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+}
+
+.templates__pagination {
+  @include flex();
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.templates__pagination-next {
+  padding: 16px 25px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: $secondary-color;
+  border-radius: 3px;
+  background-color: #eeeeee;
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 78px;
   }
 }

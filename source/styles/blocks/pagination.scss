@@ -1,1 +1,30 @@
-/* Стили будут тут */
+.pagination {
+  @include flex(row, center, normal);
+  flex-wrap: wrap;
+  gap: 11px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: normal;
+  }
+}
+
+.pagination__link {
+  display: block;
+  padding: 16px 17px;
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  border-radius: 3px;
+  text-align: center;
+  color: $secondary-color;
+
+  &--current {
+    padding: 13px 17px;
+    border: 3px solid #dbdbdb;
+    background-color: #ffffff;
+  }
+}

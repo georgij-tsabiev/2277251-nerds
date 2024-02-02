@@ -1,6 +1,10 @@
 .sorting {
   @include flex(column, normal, center);
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .sorting__title {
