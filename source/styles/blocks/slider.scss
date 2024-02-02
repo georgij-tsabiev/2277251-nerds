@@ -12,6 +12,13 @@
 }
 
 .slider__item {
+  @media (min-width: 1150px) {
+    display: grid;
+    grid-template-columns: 397px 596px;
+    gap: 7px;
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 390px 760px;

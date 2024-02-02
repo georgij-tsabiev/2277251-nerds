@@ -2,7 +2,12 @@
   background-color: #eeeeee;
 
   &--secondary {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
+      padding: 35px 75px 50px 75px;
+      font-size: 45px;
+    }
+
+    @media (min-width: 1150px) {
       padding: 72px 140px 108px 140px;
     }
 

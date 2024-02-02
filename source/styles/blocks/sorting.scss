@@ -1,9 +1,18 @@
 .sorting {
-  @include flex(row, normal, center);
+  @include flex(column, normal, center);
+  flex-wrap: wrap;
 }
 
 .sorting__title {
-  margin-right: 266px;
+  margin-top: 0;
+
+  @media (min-width: 1150px) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 266px;
+  }
 }
 
 .sorting__list {
