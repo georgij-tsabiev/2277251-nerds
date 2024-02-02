@@ -1,8 +1,9 @@
 .sorting {
   @include flex(column, normal, center);
   flex-wrap: wrap;
+  gap: 0 50px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
   }
 }
@@ -29,8 +30,24 @@
 }
 
 .sorting__toggle-button {
-  width: 11px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../images/icons/stack.svg#icon-arrow-sorting");
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: center;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--cheap {
+    transform: rotate(-180deg);
+  }
+
+  &--active {
+    opacity: 1;
+  }
 }
 
 .templates__list {
@@ -38,4 +55,19 @@
   grid-template-columns: 1fr 1fr;
   gap: 31px 41px;
   padding: 50px 0 55px 0;
+}
+
+.sorting__button {
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: $secondary-color;
+  opacity: 0.3;
+
+  &--current {
+    opacity: 1;
+  }
 }
