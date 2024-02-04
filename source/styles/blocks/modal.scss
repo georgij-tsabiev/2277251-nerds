@@ -17,12 +17,152 @@
 }
 
 .modal__contact-us {
-  width: 320px;
-  padding: 29px 30px 46px 30px;
   margin: auto;
+  padding: 29px 30px 46px 30px;
+  position: relative;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 960px;
+    padding: 40px;
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 63px 100px 84px 100px;
+    width: 960px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 37px 0;
+    font-size: 45px;
+  }
+}
+
+.modal__feedback-form {
+  @include flex(column);
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex();
+    flex-wrap: wrap;
+    gap: 0 40px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    background-color: #fecece;
+    border-radius: 1px;
+  }
+
+  &::before {
+    transform: translate(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%) rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+    right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 66px;
+    right: 100px;
+  }
+}
+
+.modal__label {
+  @include flex(column);
+  gap: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112%;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 360px;
+
+    &:last-of-type {
+      margin: 34px 0 9px 0;
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.modal__field {
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 112%;
+  color: #444444;
+
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 34px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 360px;
+  }
+}
+
+.modal__user-letter {
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__button {
+  padding: 16px;
+  width: 100%;
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    max-width: 260px;
   }
 }

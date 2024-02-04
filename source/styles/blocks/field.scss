@@ -1,0 +1,10 @@
+.field {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: #444444;
+    opacity: 0.3;
+  }
+}
