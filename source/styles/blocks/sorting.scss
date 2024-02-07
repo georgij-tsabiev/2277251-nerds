@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 0 38px;
+  }
 }
 
 .sorting__title {
@@ -58,6 +62,7 @@
 }
 
 .sorting__button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   font-family: "Roboto", "Tahoma", sans-serif;
