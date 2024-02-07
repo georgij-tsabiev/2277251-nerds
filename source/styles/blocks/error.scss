@@ -1,24 +1,41 @@
 .error {
   @include flex(column);
+  position: relative;
+  z-index: 1;
   height: 100vh;
   background-image: url("../../images/line-mobile.svg");
   background-repeat: no-repeat;
-  padding: 20px;
-  background-color: #edf0f5;
+  padding: 20px 37px;
+  background-color: #eeeeee;
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../images/line-desktop.svg");
+    padding: 20px 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0;
+    background-image: url("../../images/line-mobile.svg, ../../error-man-desktop@1x.png");
+    background-position: center top;
   }
 }
 
 .error__title {
   @include flex(column);
   margin: 0 0 15px 0;
-  color: $secondary-color;
+  gap: 6px;
+  color: $main-color;
   font-family: "Roboto", "Tahoma", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .error__title-additional {
@@ -28,24 +45,50 @@
 
 .error__descr {
   margin: 0 0 15px 0;
+  max-width: 258px;
+  color: $main-color;
   font-size: 18px;
   font-weight: 300;
   line-height: 136.8%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .error__home-link {
-  max-width: 180px;
+  max-width: 200px;
   padding: 12px 20px;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
-  background-color: #0ea6e7;
+  background-color: #fb565a;
 }
 
 .error__text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
   color: #ffffff;
   font-family: "Train One", "Arial", sans-serif;
-  font-size: 200px;
+  font-size: 125px;
   font-weight: 400;
   line-height: 109.3%;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+    font-size: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 425px;
+    font-size: 200px;
+  }
 }
