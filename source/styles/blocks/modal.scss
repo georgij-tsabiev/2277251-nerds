@@ -146,6 +146,8 @@
 }
 
 .modal__user-letter {
+  resize: none;
+
   @media (min-width: $desktop-width) {
     max-width: none;
   }
