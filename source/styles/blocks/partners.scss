@@ -13,7 +13,6 @@
 .partners__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
   align-items: center;
   justify-items: center;
   border-top: 2px solid #eeeeee;
@@ -23,4 +22,24 @@
   @media (min-width: $desktop-width) {
     @include flex(row, space-around, center);
   }
+}
+
+.partners__item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #eeeeee;
+  }
+}
+
+.partners__link {
+  padding: 0 44px;
+  display: block;
 }
