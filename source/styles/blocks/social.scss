@@ -4,6 +4,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 260px;
+  }
 }
 
 .social__link {
@@ -54,5 +59,10 @@
     &::before {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 81px;
+    height: 81px;
   }
 }

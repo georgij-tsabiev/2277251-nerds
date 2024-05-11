@@ -2,9 +2,16 @@
   padding: 35px 37px 35px 37px;
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: max-content max-content;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0 140px;
+    padding: 35px 20px;
+  }
+}
+
+.footer__content {
+  @media (min-width: $desktop-width) {
+    padding: 7px 0 0 0;
   }
 }
 
@@ -15,6 +22,10 @@
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+  }
 }
 
 .footer__descr {
@@ -27,5 +38,6 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     text-align: start;
+    font-size: 16px;
   }
 }

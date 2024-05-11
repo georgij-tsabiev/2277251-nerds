@@ -19,8 +19,13 @@
   border-bottom: 2px solid #eeeeee;
   padding: 15px 0;
 
+  @media (min-width: $tablet-width) {
+    gap: 35px 0;
+  }
+
   @media (min-width: $desktop-width) {
     @include flex(row, space-around, center);
+    padding: 45px 31px;
   }
 }
 
@@ -40,6 +45,6 @@
 }
 
 .partners__link {
-  padding: 0 44px;
+  padding: 0 44px 0 0;
   display: block;
 }

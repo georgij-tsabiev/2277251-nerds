@@ -5,6 +5,11 @@
   justify-content: center;
   justify-items: center;
   gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    justify-items: normal;
+    gap: 10px 0;
+  }
 }
 
 .advantages__definition {
@@ -24,6 +29,10 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 40px;
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -42,5 +51,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
