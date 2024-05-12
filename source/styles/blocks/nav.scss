@@ -95,6 +95,7 @@
 }
 
 .nav__link {
+  display: block;
   color: $secondary-color;
 
   &:hover {
@@ -104,5 +105,12 @@
   &:active {
     color: $secondary-color;
     opacity: 0.3;
+  }
+
+  &--active {
+    text-decoration: underline;
+    text-decoration-color: #fb565a;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 22px;
   }
 }
